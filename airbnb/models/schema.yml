@@ -16,5 +16,21 @@ models:
       - name: room_type
         data_tests:
           - accepted_values:
-              values: ['Entire home/apt','Private room','Shared room', 'Hotel room-breakthis']
+              values: ['Entire home/apt','Private room','Shared room','Hotel room']
 
+
+  - name: dim_hosts_cleansed
+    columns:
+      - name: host_id
+        data_tests:
+          - not_null
+          - unique
+  
+      - name: host_name
+        data_tests:
+          - not_null
+
+      - name: is_superhost
+        data_tests:
+          - accepted_values:
+              values: ['t','f']
