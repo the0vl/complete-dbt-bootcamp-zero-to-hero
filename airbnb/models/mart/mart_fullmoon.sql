@@ -1,7 +1,6 @@
 {{ config(
     materialized = 'table'
 )}}
-
 WITH fact_reviews AS (
     SELECT * FROM {{ ref('fact_reviews') }}
 ),
