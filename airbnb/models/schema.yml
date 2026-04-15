@@ -16,7 +16,7 @@ models:
       - name: room_type
         data_tests:
           - accepted_values:
-              values: ['Entire home/apt','Private room','Shared room','Hotel room']
+              values: ['Entire home/apt','Private room','Shared room','Hotel room -break']
 
 
   - name: dim_hosts_cleansed
@@ -34,3 +34,4 @@ models:
         data_tests:
           - accepted_values:
               values: ['t','f']
+              
