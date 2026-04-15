@@ -1,5 +1,21 @@
 {
-  "python.defaultInterpreterPath": "./.venv/bin/python",
+  "python.defaultInterpreterPath": "./complete-dbt-bootcamp-zero-to-hero/.venv/bin/python",
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.terminal.useEnvFile": true,
+  "dbt.projectDir": "complete-dbt-bootcamp-zero-to-hero/airbnb",
+  "terminal.integrated.inheritEnv": true,
+  "files.associations": {
+    "*.sql": "jinja-sql"
+  },
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/dbt-labs/dbt-jsonschema/main/schemas/dbt_project.json": "**/dbt_project.yml"
+  },
+  "yaml.customTags": [
+    "!Tag",
+    "!include",
+    "!import",
+    "!export"
+  ],
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
